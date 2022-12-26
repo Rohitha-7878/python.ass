@@ -1,0 +1,31 @@
+                           // UNIQUE AND DUPLICATE//
+list_given=[2,7,1,4,9,5,1,4,3]
+
+unique_elements=list()
+
+duplicate_elements=set()
+
+for element in list_given:
+
+   if list_given.count(element)==1:
+
+       unique_elements.append(element)
+
+   else:
+
+       duplicate_elements.add(element)
+
+print('Unique Elements from the list are as follows -')
+
+print(*unique_elements,sep=', ')
+
+print('Duplicate Elements from the list are as follows -')
+
+print(*duplicate_elements,sep=', ')
+
+//OUTPUT//
+Unique Elements from the list are as follows -
+2, 7, 9, 5, 3
+Duplicate Elements from the list are as follows -
+1, 4
+>

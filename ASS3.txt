@@ -1,0 +1,22 @@
+                          //FIBONACCI SERIES//
+Number = int(input("\nPlease Enter the Range : "))
+i = 0
+First= 0
+Second= 1
+while(i < Number):
+    if(i <= 1):
+        Next = i
+    else:
+        Next = First+Second
+        First= Second
+        Second= Next
+    print(Next)
+    i = i + 1
+
+//OUTPUT//
+Please Enter the Range : 4
+0
+1
+1
+2
+>

@@ -1,0 +1,23 @@
+                        //SUM OF PRIME NUMBERS//
+try:
+    n = int(input("Enter the value of n: "))
+    prime_list = []
+    sum = 0
+    for i in range(2, n+1):
+        for j in range(2, i):
+            if i % j == 0:
+               break
+        else:
+            sum = sum + i
+            prime_list.append(i)
+    print("Sum of ", end="")
+    for i in prime_list:
+        print(i, end=", ")
+    print("is: ", sum)
+except:
+    print("Enter an integer only")
+
+//OUTPUT//
+Enter the value of n: 20
+Sum of 2, 3, 5, 7, 11, 13, 17, 19, is:  77
+>

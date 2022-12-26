@@ -1,0 +1,38 @@
+                         //HAPPY NUMBER OR NOT//
+def num(x):  
+
+   remainder = sum = 0
+
+   while(x > 0):  
+
+        remainder = x%10
+
+        sum = sum + (remainder*remainder)
+
+        x = x//10
+
+   return sum
+
+x =int(input("Enter a number:"))
+
+res = x
+
+while(res != 1 and res != 4) :  
+
+       res = num(res)
+
+if (res == 1):  
+
+       print(str (x) + " is a Happy Number");  
+
+elif (res == 4):  
+
+       print(str (x) + " is not a Happy Number");    
+
+//OUTPUT//
+Enter a number:1
+1 is a Happy Number
+>
+Enter a number:3
+3 is not a Happy Number
+>

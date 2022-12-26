@@ -1,0 +1,22 @@
+        //PRIME NUMBER OR NON-PRIME NUMBER//
+Number = int(input(" Please Enter any Number: "))
+count =Number 
+count = 0
+
+for i in range(2, (Number//2 + 1)):
+    if(Number % i == 0):
+        count = count + 1
+        break
+
+if (count == 0 and Number != 1):
+    print(" %d is a Prime" %Number)
+else:
+    print(" %d is Not" %Number)	
+
+//OUTPUT//
+Please Enter any Number: 5
+5 is a Prime
+>
+Please Enter any Number: 9
+9 is Not
+>
